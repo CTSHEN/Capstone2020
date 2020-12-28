@@ -4,11 +4,11 @@
   <arg name="camera" default="/iris_fpv_cam/usb_cam"/>
   <arg name="image" default="image_raw"/>
   <arg name="transport" default="compressed"/>
-  <arg name="fiducial_len" default="0.5"/>
+  <arg name="fiducial_len" default="0.05"/>
   <arg name="dictionary" default="16"/>
   <arg name="do_pose_estimation" default="true"/>
   <arg name="ignore_fiducials" default="" />
-  <arg name="fiducial_len_override" default="" />
+  <arg name="fiducial_len_override" default="0: 0.5, 1: 0.1, 7: 0.03" />
 
   <node pkg="aruco_detect" name="aruco_detect"
     type="aruco_detect" output="screen" respawn="false">

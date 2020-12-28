@@ -48,9 +48,11 @@
   </group>
 
   <!-- static transforms-->
-  <node pkg="tf" type="static_transform_publisher" name="iris_and_fpv_cam" args="0 0 0 1.5708 0 0 fcu_frd robot_camera_link 10" />
+  <node pkg="tf" type="static_transform_publisher" name="iris_and_fpv_cam" args="0 0 -0.05 1.5708 0 0 fcu_frd robot_camera_link 10" />
 
   <node pkg="tf" type="static_transform_publisher" name="fix_fiducial_7_with_map" args="0 0 0 0 0 0 fiducial_7 map 1"/>
+
+  <node pkg="tf" type="static_transform_publisher" name="fix_fiducial_0_with_map" args="0.3 0.3 0.02 0 0 0 map fiducial_0 1"/>
 
  <node pkg="tf" type="static_transform_publisher" name="fix_fcu_frd_with_baselink_frd" args="0 0 0 0 0 0 base_link_frd fcu_frd 1"/>
 

@@ -22,4 +22,7 @@
 		<arg name="fcu_protocol" value="$(arg fcu_protocol)" />
 		<arg name="respawn_mavros" default="$(arg respawn_mavros)" />
 	</include>
+	<param name="/mavros/vision_pose/tf/listen" type="bool" value="true"/>
+	<param name="/mavros/vision_pose/tf/frame_id" type="str" value="fiducial_7"/>
+	<param name="/mavros/vision_pose/tf/child_frame_id" type="str" value="robot_camera_link"/>
 </launch>
