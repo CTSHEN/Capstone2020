@@ -8,7 +8,7 @@
   <arg name="dictionary" default="16"/>
   <arg name="do_pose_estimation" default="true"/>
   <arg name="ignore_fiducials" default="" />
-  <arg name="fiducial_len_override" default="0: 0.5, 1: 0.1, 7: 0.03" />
+  <arg name="fiducial_len_override" default="0: 0.03, 1: 0.1, 7: 0.5" />
 
   <node pkg="aruco_detect" name="aruco_detect"
     type="aruco_detect" output="screen" respawn="false">
